@@ -1,0 +1,76 @@
+.sidebar {
+  position: fixed;
+  top: 128px;           
+  left: 0;
+  bottom: 0;            
+  width: 150px;
+  border-right: 5px solid black;
+  padding: 5px;
+}
+
+p{
+    font-family: "Michroma", sans-serif;
+    text-align: justify;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sidebar a {
+  display: block;        
+  width: 100%;           
+  box-sizing: border-box; 
+  padding: 10px;
+  text-align: left;       
+}
+
+main {
+  margin-left: 200px;  
+  padding: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;                
+  justify-content: center;  
+  flex-wrap: wrap;          
+  margin-top: 1rem;
+}
+
+.social-btn {
+  display: inline-flex;      
+  align-items: center;        
+  gap: 8px;                  
+  padding: 8px 12px;         
+  text-decoration: none;      
+  background: #38bdf8;        
+  border-radius: 6px;
+  color: #fff;
+}
+
+.social-btn img {
+  width: 20px;   
+  height: 20px;  
+  object-fit: contain; 
+}
