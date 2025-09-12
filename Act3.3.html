@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Type Checker</title>
+</head>
+<body>
+    <h1>Triangle Type Checker</h1>
+    <p>Enter the lengths of the three sides of a triangle to determine its type.</p>
+    <button onclick="checkTriangle()">Check Triangle Type</button>
+
+    <script>
+    function checkTriangle() {
+      // window prompt for ALL sides
+      var a = prompt("Enter side A:");
+      var b = prompt("Enter side B:");
+      var c = prompt("Enter side C:");
+
+      // validate inputs (NaN = not a number)
+      if (isNaN(a) || isNaN(b) || isNaN(c) || a <= 0 || b <= 0 || c <= 0) {
+        alert("Please enter valid positive numbers for all sides!");
+        return;
+      }
+
+      a = Number(a);
+      b = Number(b);
+      c = Number(c);
+
+      determineTriangle(a, b, c);
+    }
+
+    function determineTriangle(a, b, c) {
+      if (a + b <= c || a + c <= b || b + c <= a) {
+        alert("The numbers do not form a valid triangle.");
+        return;
+      }
+
+      if (a === b && b === c) {
+        alert("The triangle is EQUILATERAL.");
+      } else if (a === b || a === c || b === c) {
+        alert("The triangle is ISOSCELES.");
+      } else {
+        alert("The triangle is SCALENE.");
+      }
+    }
+    </script>
+</body>
+</html>
