@@ -118,7 +118,7 @@ h2 {
 .project-card a {
   display: block;
   text-decoration: none;
-  color: inherit;  /* Prevent link color overriding */
+  color: inherit; 
   height: 100%;
 }
 
@@ -162,27 +162,27 @@ h2 {
 
 .social-links {
   display: flex;
-  gap: 20px;                /* spacing between buttons */
-  justify-content: center;  /* center horizontally */
-  flex-wrap: wrap;          /* wrap to new line on small screens */
+  gap: 20px;               
+  justify-content: center;  
+  flex-wrap: wrap;         
   margin-top: 1rem;
 }
 
 .social-btn {
-  display: inline-flex;       /* use flexbox */
-  align-items: center;        /* vertically center items */
-  gap: 8px;                   /* space between logo and text */
-  padding: 8px 12px;          /* button padding */
-  text-decoration: none;      /* remove underline */
-  background: #38bdf8;        /* dark button */
+  display: inline-flex;       
+  align-items: center;      
+  gap: 8px;                  
+  padding: 8px 12px;         
+  text-decoration: none;     
+  background: #38bdf8;       
   border-radius: 6px;
   color: #fff;
 }
 
 .social-btn img {
-  width: 20px;   /* adjust width */
-  height: 20px;  /* adjust height */
-  object-fit: contain; /* keeps aspect ratio */
+  width: 20px;   
+  height: 20px; 
+  object-fit: contain; 
 }
 
 /* Footer */
